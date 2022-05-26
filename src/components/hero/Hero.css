@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.heroContent{
+    height: fit-content;
+    background-color: black;
+    width: 1000px;
+    margin: auto;
+}
+
+.heroSummary{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.heroSummary .heroPic{
+    height: 500px;
+    overflow: hidden;
+}
+.heroSummary .heroPic img{
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+.heroSummary .heroInfo {
+    height: 100%;
+}
+.heroSummary .heroInfo .heroText{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.heroContent h1, .heroContent p{
+    color: white;
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+.headerMenu{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: rgb(178, 0, 0);
+    height: 68px;
+}
+
+.headerMenu li{
+    margin-left: 30px;
+    padding: 25px;
+}
+
+.headerMenu li:hover{
+    background-color: rgba(127, 0, 0, 0.523);
+}
+
+.headerMenu li p{
+    color: rgb(158, 158, 158);
+    pointer-events: none;
+}
+
+.headerMenu .marvelLogo{
+    height: 68px;
+}
+
+li#marvelLogo{
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    height: 68px;
+}
