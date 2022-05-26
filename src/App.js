@@ -3,6 +3,7 @@ import Login from './components/login/Login';
 import Heroes from './components/heroes/Heroes';
 import Details from './components/details/Details';
 import Hero from './components/hero/Hero';
+import './App.css';
 
 function App() {
 	localStorage.setItem("email", "esteban@gmail.com");
@@ -13,12 +14,12 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<h1>Hola</h1>}></Route>
+					<Route path="/" element={<Login/>}></Route>
 					<Route path='/login' element={<Login/>}></Route>
 					<Route path='/heroes' element={<Heroes/>}></Route>
 					<Route path='/details' element={<Details/>}/>
-					<Route path='/hero' element={<Hero />}>
-						<Route path=':heroId' element={<Hero />} />
+					<Route path='/hero' element={<Hero/>}>
+						<Route path=':heroId' element={<Hero/>} />
 					</Route>
 				</Routes>
 			</BrowserRouter>
