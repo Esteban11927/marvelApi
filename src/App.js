@@ -3,6 +3,7 @@ import Login from './components/login/Login';
 import Heroes from './components/heroes/Heroes';
 import Details from './components/details/Details';
 import Hero from './components/hero/Hero';
+import PageNotFound from './components/pageNotFound/PageNotFound';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 					<Route path='/hero' element={<Hero/>}>
 						<Route path=':heroId' element={<Hero/>} />
 					</Route>
+					<Route path="*" element={<PageNotFound/>}></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>

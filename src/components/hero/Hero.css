@@ -1,11 +1,11 @@
 body{
-    background-color: black;
+    background: black;
 }
 
 .heroContent{
     height: fit-content;
     background-color: black;
-    width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
